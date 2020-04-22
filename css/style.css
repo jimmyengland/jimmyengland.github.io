@@ -12,7 +12,7 @@ html {
 header, footer{
     margin: auto;
     width: 100%;
-    background-color: #1F8AFF;
+    background-color: rgb(1, 51, 105);
     text-align: center;
     color: white;
     font-family: 'Noto Sans', sans-serif;
@@ -52,5 +52,5 @@ footer {
 }
 
 .lastUpdated{
-    color: #52FBFF;
+    color: rgb(255, 255, 255);
 } 
