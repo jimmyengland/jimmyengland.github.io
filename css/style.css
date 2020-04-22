@@ -3,7 +3,7 @@
 
 html {
     background-color: white;
-    max-width: 900px;
+    max-width: 960px;
     font-size: 18px;
     margin: auto;
     
@@ -54,3 +54,10 @@ footer {
 .lastUpdated{
     color: rgb(255, 255, 255);
 } 
+
+@media screen and (max-width: 550px) {
+    body {
+        display: block;
+    }
+}
+
