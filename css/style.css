@@ -5,11 +5,12 @@ html {
     background-color: white;
     max-width: 960px;
     font-size: 18px;
-    margin: auto;
+    margin: 3rem auto;
     
     
 }
 header, footer{
+    padding: 1.5rem; 
     margin: auto;
     width: 100%;
     background-color: rgb(1, 51, 105);
@@ -20,7 +21,7 @@ header, footer{
     border-radius: 25px;
 }
 header{
-    padding-top: 10px;
+    
     height: 100px;
 }
 
@@ -29,10 +30,12 @@ main {
     display: block;
     height: 200px;
     font-family: 'PT Sans', sans-serif;
+    margin: 2rem;
 }
 
 h1 {
     font-size: 2em;
+    
 }
 
 img {
@@ -41,7 +44,6 @@ img {
 }
 
 footer {
-    padding-top: 15px;
     height: 50px;
     font-size: .75em;
     
@@ -56,8 +58,8 @@ footer {
 } 
 
 @media screen and (max-width: 550px) {
-    body {
-        display: block;
-    }
+    
+    
+    
 }
 
