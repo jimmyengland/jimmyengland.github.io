@@ -30,7 +30,7 @@ main {
     display: block;
     height: 200px;
     font-family: 'PT Sans', sans-serif;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 h1 {
