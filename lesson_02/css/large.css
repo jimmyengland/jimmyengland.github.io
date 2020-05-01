@@ -8,7 +8,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .principal
+    .principal{
         width: 300px;
     }
 }
