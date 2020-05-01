@@ -1,0 +1,37 @@
+html{
+    margin: auto 20px;
+    background-color: lightblue;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+h1{
+    align-content: center;
+}
+main{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+div{
+    padding: 2em;
+    border: ridge;
+    width: 280px;
+    background-color: white;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    height: 100px;
+}
+
+img{
+    margin: 10px;
+}

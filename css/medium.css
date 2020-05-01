@@ -1,0 +1,28 @@
+@media only screen and (min-width: 32.5em){
+
+    html {
+        margin: 3rem auto;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+ 
+    img{
+        float: right;
+        margin: 15px;
+    }
+    
+    header, footer{
+        width: 100%;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    main {
+        margin: 2rem;
+    }
+    
+
+    
+}
