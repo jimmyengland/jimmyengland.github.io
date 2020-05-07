@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 html {
     background-color: white;
     max-width: 950px;
@@ -5,7 +10,6 @@ html {
 }
 header, footer{
     padding: 1.5rem; 
-    margin: .5rem 1.5rem .5rem 0rem;
     background-color: rgb(1, 51, 105);
     text-align: center;
     color: white;
@@ -17,7 +21,6 @@ header, footer{
 main {
     text-align: left;
     display: block;
-    height: 200px;
     font-family: 'PT Sans', sans-serif;
     margin: 1rem 2rem 1rem 2rem;
 }
@@ -33,7 +36,6 @@ img {
 }
 
 footer {
-    height: 50px;
     font-size: .75em;
     
 }
