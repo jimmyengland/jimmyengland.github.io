@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px){
+
+    html {
+        margin: 3rem auto;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+ 
+    
+    header, footer{
+        width: 100%;
+        border-radius: 25px;
+        margin: auto;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    th, td {
+        padding: 1rem;
+    }
+
+    .url{
+        width: 50%;
+    }
+
+    
+}
