@@ -1,3 +1,3 @@
 var date = new Date();
 var year = date.getFullYear();
-document.getElementById("year").textContent = year
+document.getElementById("year").textContent = year;
