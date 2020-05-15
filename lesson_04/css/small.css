@@ -41,17 +41,13 @@ header{
 }
 
 
-h1 h2 {
-    font-family: 'Poppins', sans-serif;
-    
-}
-
-h1{
+h1,h2 {
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-h2{
+h3{
     font-size: 1rem;
 }
 
@@ -95,7 +91,7 @@ nav ul.hide {display: none;}
 
 main section{
     background-color: rgba(0,0,0,0.2);
-    max-width: 90%;
+    max-width: 800px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -150,13 +146,20 @@ main section{
 } */
 
 footer{
-    display: block;
-    text-align: center;
-    position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;  
+    position: fixed;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+}
+
+.footer{ 
     background-color: #FFB5A7;
+    height: 3rem;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: .7rem;

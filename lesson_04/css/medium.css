@@ -1,5 +1,5 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 680px) {
 
     nav{
         display: flex;
@@ -17,12 +17,12 @@
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, .3);
-        padding: .8rem .3rem;
+        padding: .6rem 1rem;
     }
 
-    main section{
+    /* main section{
         max-width: 600px;
-    }
+    } */
 
     /* .summary{
         align-content: center;
