@@ -65,7 +65,7 @@ nav button {
 }
 
 nav{
-    background-color:#F9DCC4;
+    background-color:rgb(126, 162, 197);
     font-family: 'Lato', sans-serif;
 }
 
@@ -89,13 +89,16 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 nav ul.hide {display: none;}
 
-main section{
+main div{
     background-color: rgba(0,0,0,0.2);
     max-width: 800px;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+    
 }
+
+
 
 /* .summary{
     position: relative;
@@ -151,6 +154,7 @@ footer{
     margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
+    border-radius: 7px;
 }
 
 .footer{ 
