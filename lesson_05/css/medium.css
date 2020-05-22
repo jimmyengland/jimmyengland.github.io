@@ -20,10 +20,11 @@
         padding: .6rem 1rem;
     }
 
-    main div {
-        border-radius: 7px;
-
+    main div{
+        border-radius: 10px;
     }
+
+    
 
     /* main section{
         max-width: 600px;
@@ -31,11 +32,108 @@
 
     /* .summary{
         align-content: center;
-    }
+    }*/
 
     .hero {
         align-items: center;
-        width: 70%;
         padding: 1%;
-    } */
+    } 
+
+    .summary h2{
+        font-size: 1rem;
+    }
+
+    .weather{
+        font-size: .85rem;
+        width: 30%;
+    }
+
+    .article{
+        margin-top: 30px;
+        text-align: left;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .article .title{
+        text-align: left;
+    }
+    
+    .author {
+        font-size: .7rem;
+    }
+    
+    .articleImg {
+        float: right;
+        width: 35%; 
+    }
+
+    .day{
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+        /* flex-direction: row; */
+        /* let us combine row and wrap with flow */
+        flex-flow: row wrap;
+    }
+    
+    .day h3{
+        text-align: center;
+
+    }
+
+    .flex-col {
+        flex: 1 1 auto;
+        background-color: #bed;
+    }
+    .flex-col, .column-col, .grid-col {
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    }
+    .flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+        opacity: 0.75;
+        background-color: black;
+        color: white;
+    }
+    .flex, .column, .grid {
+        border-right: 1px solid #333;
+    }
+    
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        border-top: 1px solid #333;
+        text-align: center;
+    }
+    
+    .flex img {
+     
+        padding: 0.25rem;
+    }
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .col-head,th {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: rgb(126, 162, 197);;
+        color: white;
+    }
+
+    .flex img{
+        width: 50px;
+    }
+    
+
+
+
 } /*end medium */

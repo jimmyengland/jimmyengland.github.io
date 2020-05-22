@@ -18,6 +18,17 @@ html{
     
 }
 
+#friday{
+    display: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(209, 136, 0);
+    color: white;
+    height: 5%;
+}
+
+
 header{
     background-color: #FFB5A7;
     padding: 10px;
@@ -93,27 +104,32 @@ main div{
     background-color: rgba(0,0,0,0.2);
     max-width: 800px;
     margin: 10px auto;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.summary{
+    position: relative;
     
 }
 
-
-
-/* .summary{
-    position: relative;
-
+.summary h2{
+    font-size: .75rem;
 }
 
 .weather{
     position: absolute;
-    font-size: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .65rem;
     left: 15px;
     top: 20px;
     width: 50%;
     background-color: rgba(0,0,0,0.2);
     color: white;
-    padding: 3px;
+    padding: 5px;
 }
 
 .hero {
@@ -126,6 +142,10 @@ main div{
     text-align: left;
     padding: 10px;
     background-color: rgba(0,0,0,0.2);
+}
+
+.article .title{
+    text-align: left;
 }
 
 .author {
@@ -146,11 +166,11 @@ main div{
 .map{
     width: 80%;
     height: 60%;
-} */
+}
 
 footer{
     bottom: 0;
-    position: fixed;
+    /* position: fixed; */
     margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
@@ -167,8 +187,10 @@ footer{
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: .7rem;
+}
 
-    
+.day{
+    display: none;
 }
 
 

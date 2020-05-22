@@ -7,8 +7,8 @@ var year = date.getFullYear();
 var day = date.getDay();
 var dayNum = date.getDate();
 var month = date.getMonth();
-var monthNames = ["January","February","March","April","May","June","July","August","October","November","December"]
-var dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "November", "December"]
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 var dateString = dayNames[day] + ", " + dayNum + " " + monthNames[month] + ", " + year;
 document.getElementById("date").innerHTML = dateString;
@@ -17,3 +17,12 @@ document.getElementById("date").innerHTML = dateString;
 document.getElementById("year").textContent = year;
 
 
+
+const banner = document.getElementById("friday");
+if (date.getDay() == 5) {
+    banner.style.display = "block";
+}
+
+else {
+    banner.style.display = "none";
+}
