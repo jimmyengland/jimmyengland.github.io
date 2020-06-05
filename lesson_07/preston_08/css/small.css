@@ -125,6 +125,7 @@ main div{
 
 .summary{
     position: relative;
+    background-color: transparent;
     
 }
 
@@ -138,6 +139,7 @@ main div{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
     font-size: .65rem;
     left: 15px;
     top: 20px;
@@ -147,8 +149,13 @@ main div{
     padding: 5px;
 }
 
+img{
+    max-width: 100%;
+}
+
 .hero {
     padding: 1%;
+    width: 100%;
 }
 
 article{

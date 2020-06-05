@@ -9,15 +9,17 @@
     nav button {display: none;}
 
     nav ul li {
-        float: left;
+        flex: 1 1 100%;
+        min-height: 100%;
     }
 
-    nav ul.hide {display: block;}
+    nav ul.hide {display: flex;}
 
     nav ul li a {
         border: none;
         border-right: 1px solid rgba(0, 0, 0, .3);
         padding: .6rem 1rem;
+        min-height: 100%;
     }
 
     .first{

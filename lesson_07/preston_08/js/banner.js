@@ -18,3 +18,11 @@ document.getElementById("year").textContent = year;
 
 
 
+const banner = document.getElementById("friday");
+if (date.getDay() == 5) {
+    banner.style.display = "block";
+}
+
+else {
+    banner.style.display = "none";
+}
