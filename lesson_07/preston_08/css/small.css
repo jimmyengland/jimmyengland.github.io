@@ -182,7 +182,7 @@ article .title{
     width: 90%;
 }
 /* gallery images set up */
-picture {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;

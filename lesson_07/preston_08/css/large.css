@@ -17,12 +17,15 @@
     }
 
    /* gallery images set up */
-    picture {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    picture :hover{
-        box-shadow: 0 0 11px
-        rgba(33, 33, 33, .2);
+   .gallery{
+       max-width: 1000px;
+       grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+   }
+
+    .gallery :hover{
+        box-shadow: 0 0 25px
+        rgba(33, 33, 33, .5);
     }
 
 } /*end large */
