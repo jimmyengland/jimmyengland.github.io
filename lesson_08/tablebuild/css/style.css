@@ -3,6 +3,7 @@ table {
     text-align: center;
     margin: auto;
     box-shadow: 10px 10px 8px #628ca6;
+    font-family: 'Ubuntu' sans-serif;
 }
 
 table, th, td {
@@ -11,9 +12,7 @@ table, th, td {
 }
 
 thead, tfoot{
-    background-color: #7fb9c2;
-    font-family: sans-serif;
-    
+    background-color: #7fb9c2;    
 }
 
 thead th{
@@ -27,7 +26,6 @@ thead td{
 
 tbody{
     background-color: #e7ffed;
-    font-family: 'Ubuntu';
 }
 
 tbody tr:nth-child(odd){
