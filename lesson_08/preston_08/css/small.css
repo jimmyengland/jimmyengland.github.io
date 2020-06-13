@@ -219,7 +219,8 @@ form legend{
 }
 
 form label.top{
-    padding-top: 35px;
+    display: block;
+    padding-top: 15px;
 }
 
 form label.top form div{
@@ -231,13 +232,15 @@ form label.top form div{
 
 div.storm{
     background-color: rgba(0, 0, 0, 0);
+    display: block;
+    padding-top: 1rem;
 }
 
 form label.top input, form label.top select, form input.top{
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: solid 1 px #999;
+    border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem;
     color: #555;
@@ -250,7 +253,7 @@ form label.flexly{
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    padding: .55rem;
+    padding: 1rem;
 }
 
 form label.sbs{
