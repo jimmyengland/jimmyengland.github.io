@@ -17,4 +17,9 @@ document.getElementById("date").innerHTML = dateString;
 document.getElementById("year").textContent = year;
 
 
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+
 
