@@ -46,9 +46,6 @@
         margin: 20px;
     }
 
-    .cards p{
-        margin-top: ;
-    }
 
     .cards{
         display: grid;
@@ -58,8 +55,7 @@
     .cards section img{
         height: auto;
         width: 100%;
-        /* display: flex;
-        align-items: flex-end; */
+
         vertical-align: bottom;
         display: table-cell;
 
