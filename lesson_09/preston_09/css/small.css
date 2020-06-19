@@ -119,9 +119,6 @@ main{
     margin: 10px auto;
 }
 
-main div{
-    background-color: rgba(0,0,0,0.2);
-}
 
 .summary{
     position: relative;
@@ -311,6 +308,27 @@ footer a{
 .day{
     display: none;
 }
+
+
+/* index page */
+.cards section{
+    margin: auto;
+    text-align: center;
+    background-color:rgba(0, 0, 0, .2);
+    max-width: 300px;
+}
+
+.article{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+section h3{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
