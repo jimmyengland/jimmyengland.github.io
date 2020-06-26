@@ -95,6 +95,7 @@
     }
 
     .col-head {
+        color: black;
         display: block;
         padding: 5px;
         border-bottom: 1px solid #333;
@@ -127,8 +128,7 @@
         font-weight: 700;
         font-size: 1rem;
         background-color: rgb(126, 162, 197);
-        ;
-        color: white;
+        color: black;
     }
 
     .flex img {

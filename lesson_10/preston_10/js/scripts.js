@@ -55,7 +55,7 @@ fetch(forecastURL)
     .then((jsonObject) => {
         const fiveday = jsonObject.list.filter(x => x.dt_txt.includes('18:00:00'));
 
-        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let i = 1;
 
         fiveday.forEach(forcast => {
