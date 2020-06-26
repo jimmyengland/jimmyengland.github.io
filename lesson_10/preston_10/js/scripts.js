@@ -23,7 +23,7 @@ function adjustRating(rating) {
 
 
 //current weather information
-const currentURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
+const currentURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
 fetch(currentURL)
     .then((response) => response.json())
@@ -48,7 +48,7 @@ fetch(currentURL)
 
     );
 
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
 fetch(forecastURL)
     .then((response) => response.json())
