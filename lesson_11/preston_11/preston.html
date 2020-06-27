@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Watch Services</title>
+    <meta name="description" content="Site Plan for weather in Preston Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div id="friday">This Saturday! Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <img class="logo" src="images/icon.png" alt="Page Icon">
+        <section class="head">
+            <h1>Climate Watch Services</h1>
+            <p class="motto">Climate is what we expect, weather is what we get. - Mark Twain</p>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="storm_center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston</h2>
+        <div class="summary">
+            <div class="weather">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span id="condition"></span></p>
+                <p>Current: <span id="currentTemp"></span>&#8457;</p>
+                <p>Wind Chill: <span id="chill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span> mph</p>
+            </div>
+            <picture>
+                <source media="(max-width: 680px)" srcset="images/wdd230_image_franklinOriginal_500_small.jpg">
+                <source media="(max-width: 999px)" srcset="images/wdd230_image_franklinOriginal_600_medium.jpg">
+                <source media="(min-width: 1000px)" srcset="images/wdd230_image_franklinOriginal_800_large.jpg">
+                <img src="images/wdd230_image_franklinOriginal_800_large.jpg"
+                    alt="Image of Field with the sun in the sky">
+            </picture>
+        </div>
+
+        <div class="day">
+            <h2>5 Day Forcast</h2>
+            <div class="flex">
+                <div class="flex-col">
+                    <span id="day1" class="col-head">loading...</span>
+                    <span id="forecast1" class="col-temp">loading...</span>
+                    <!-- added image link to remove error, its replaced by javascript -->
+                    <img src="images/placeholder.jpg" alt="placeholder" id="icon1">
+
+                </div>
+                <div class="flex-col">
+                    <span id="day2" class="col-head">loading...</span>
+                    <span id="forecast2" class="col-temp">loading...</span>
+                    <!-- added image link to remove error, its replaced by javascript -->
+                    <img src="images/placeholder.jpg" alt="placeholder" id="icon2">
+
+                </div>
+                <div class="flex-col">
+                    <span id="day3" class="col-head">loading...</span>
+                    <span id="forecast3" class="col-temp">loading...</span>
+                    <!-- added image link to remove error, its replaced by javascript -->
+                    <img src="images/placeholder.jpg" alt="placeholder" id="icon3">
+
+                </div>
+                <div class="flex-col">
+                    <span id="day4" class="col-head">loading...</span>
+                    <span id="forecast4" class="col-temp">loading...</span>
+                    <!-- added image link to remove error, its replaced by javascript -->
+                    <img src="images/placeholder.jpg" alt="placeholder" id="icon4">
+
+                </div>
+                <div class="flex-col">
+                    <span id="day5" class="col-head">loading...</span>
+                    <span id="forecast5" class="col-temp">loading...</span>
+                    <!-- added image link to remove error, its replaced by javascript -->
+                    <img src="images/placeholder.jpg" alt="placeholder" id="icon5">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <article class="articleDiv">
+
+            <img src="images/jonathan-bowers-thunderstorm.jpg" alt="thunderstorm" class="articleImg">
+
+            <h2 class="title">Article Title</h2>
+            <h3 class="author">by author</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Possimus esse aliquam error unde harum dolore saepe placeat
+                quibusdam suscipit, dolores quas. Corporis ex, quod nobis harum
+                saepe quos. Autem error culpa, ducimus nulla sunt velit ipsam
+                doloremque fugiat hic vel, quibusdam nesciunt repellendus alias,
+                minima doloribus commodi. Non doloribus, omnis earum commodi assumenda tenetur.
+                Suscipit atque obcaecati quidem a eligendi qui iste dolor! Ea, sequi! Id sapiente
+                deserunt odit ipsam autem asperiores ducimus, porro maxime quos corporis quia
+                consectetur voluptas soluta a voluptates accusantium reiciendis!
+                Necessitatibus nemo facilis sint voluptas molestias aut modi totam!
+                Velit nemo dignissimos quae quam nam. Voluptate fuga dolore eligendi
+                illum esse rerum qui fugit accusantium, quod rem eum. Esse voluptates
+                expedita deleniti voluptatem fuga beatae, ducimus dignissimos eveniet,
+                voluptatibus porro omnis, consequuntur cumque dolor maxime! Vero voluptas
+                ut, itaque fugiat obcaecati, nihil ab ex iusto nesciunt repudiandae accusantium.
+                Reprehenderit nemo in dolor illum error accusantium?</p>
+        </article>
+
+
+
+        <div class="contact">
+            <section>
+                <h2>Contact info</h2>
+                <p>123 ABC ST</p>
+                <p>Preston, Idaho</p>
+                <p>555-555-5555</p>
+            </section>
+            <img src="images/map_resized.png" alt="map of Preston" class="map">
+        </div>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu" href="https://www.byui.edu/online"
+            target="_blank">BYU-Idaho Online
+            Learning</a>
+        <div>Weather data from <a href="https://www.openweathermap.org" title="Open Weather">Open Weather Map</a><br>
+            Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>
+            and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+        </div>
+        <div id="date"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>

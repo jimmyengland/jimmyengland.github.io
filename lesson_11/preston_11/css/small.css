@@ -1,0 +1,345 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    background-color: rgb(191, 221, 255);
+
+    
+}
+
+#friday{
+    display: none;
+    padding: 10px;
+    text-align: center;
+    /* font-size: 1.5rem; */
+    background-color: rgb(255, 166, 1);
+    color: white;
+    height: 5%;
+}
+
+.head h1, .head p{
+    margin: 5px 0;
+}
+
+
+header{
+    background-color: #7D8597;
+    padding: 10px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 150px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+.motto {
+	font-style: italic;
+	letter-spacing: 1pt;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+
+h1,h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+/* Navigation menu */
+nav button {
+    width: 96%;
+    text-align: left;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav{
+    background-color:rgb(126, 162, 197);
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);   
+}
+
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: orange;
+}
+
+nav ul.hide {display: none;}
+
+main{
+    
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+
+.summary{
+    position: relative;
+    background-color: transparent;
+    
+}
+
+.summary h2{
+    font-size: .75rem;
+}
+
+.weather{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    font-size: .65rem;
+    left: 15px;
+    top: 20px;
+    width: 50%;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 5px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero {
+    padding: 1%;
+    width: 100%;
+}
+
+article{
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+article .title{
+    text-align: left;
+}
+
+.author {
+    font-size: .7rem;
+}
+
+.articleImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    padding: 5px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact img{
+    width: 90%;
+}
+/* gallery images set up */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px; 
+}
+
+[data-src] {
+    filter: blur(0.2em);
+  }
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+/* storm center set up  */
+form fieldset{
+    margin: auto;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 1rem 2%;
+    max-width: 70%;
+    
+}
+form legend{
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top{
+    display: block;
+    padding-top: 15px;
+}
+
+form label.top form div{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+div.storm{
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input, form label.top select, form input.top{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.flexly{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn{
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2% auto 0rem auto;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form textarea#comments{
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
+
+
+
+footer{ 
+    background-color: #7D8597;
+    max-width: 800px;
+    text-align: center;
+    bottom: 0;
+    margin: 2% auto; 
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+}
+
+footer a{
+    color: black;
+}
+
+.day{
+    display: none;
+}
+
+
+/* index page */
+.cards section{
+    margin: auto;
+    text-align: center;
+    background-color:rgba(0, 0, 0, .2);
+    max-width: 300px;
+}
+
+.article{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+section h3{
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+

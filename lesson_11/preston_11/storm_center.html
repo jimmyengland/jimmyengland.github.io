@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Watch Services</title>
+    <meta name="description" content="Site Plan for weather in Preston Idaho">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/icon.png" alt="Page Icon">
+        <section class="head">
+            <h1>Climate Watch Services</h1>
+            <p class="motto">Climate is what we expect, weather is what we get. - Mark Twain</p>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li class="active"><a href="storm_center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form method="GET" action="thanks.html">
+
+            <fieldset>
+                <!-- Personal Information  -->
+                <legend>Personal Information</legend>
+                <label class="top"> Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5.}" required></label>
+                <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top"> Zipcode <input type="tel" name="number" required></label>
+            </fieldset>
+
+            <!-- Storm Information  -->
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top"> Storm Date <input type="date" name="completeDate"></label>
+                <label class="top" for="storm-type">Choose Storm Type:</label>
+                <input class="top" list="storm-types" id="storm-type" name="storm-type" />
+                <datalist class="top" id="storm-types">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label class="top">Storm Severity:</label>
+                <!-- <label class="flexly" for="rating"> &nbsp;&nbsp;&nbsp; -->
+                    <input class="flexly" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+
+
+                <label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                </label>
+
+                <label class="top">Storm Region <select name="subjet">
+                        <option value="none" selected disabled>Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div class="storm">Are You In Danger?</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner"> Yes</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate"> Maybe</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+                <textarea id="comments" name="comments" rows="4" cols="50">Enter comments here...</textarea>
+
+
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitBtn">
+        </form>
+    </main>
+
+    <footer>
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu" href="https://www.byui.edu/online"
+            target="_blank">BYU-Idaho Online
+            Learning</a>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>
+            and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
+        </div>
+        <div id="date"></div>
+    </footer>
+<!-- scripts  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/webfontload.js"></script>
+</body>
+
+</html>
