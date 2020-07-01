@@ -42,14 +42,14 @@
     /* index page */
     .cards section{
         display: block;
-        max-width: 400px;
-        margin: 20px;
+
     }
 
 
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
     }
 
     .cards section img{

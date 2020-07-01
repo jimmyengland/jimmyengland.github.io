@@ -13,7 +13,7 @@ html{
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    background-color: rgb(191, 221, 255);
+    background-color: rgb(247, 251, 255);
 
     
 }
@@ -151,10 +151,28 @@ img{
     width: 100%;
 }
 
+.events{
+    background-color: rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+.events h2{
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* text-decoration: underline; */
+    border-bottom: solid rgba(0, 0, 0, .1);
+}
+
+.events ul{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
 article{
     margin-top: 30px;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0,0,0,0.2);
 }
 
@@ -199,8 +217,14 @@ img {
   }
 
 /* storm center set up  */
+
+form{
+    text-align: center;
+}
 form fieldset{
     margin: auto;
+    text-align: left;
+    background-color: rgba(0, 0, 0, .06);
     border: 1px solid #445ba9;
     border-radius: 10px;
     padding: 1rem 2%;
@@ -241,7 +265,6 @@ form label.top input, form label.top select, form input.top{
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.flexly{
@@ -279,6 +302,11 @@ form label.top input:required{
 
 form label.top input:required:valid{
     border-left: green solid 6px;
+}
+
+input#rating{
+    width: 95%;
+    max-width: 20rem;
 }
 
 

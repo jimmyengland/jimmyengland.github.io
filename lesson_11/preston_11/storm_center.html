@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Watch Services</title>
-    <meta name="description" content="Site Plan for weather in Preston Idaho">
+    <title>CWS - Storm Center</title>
+    <meta name="description" content="Form to submit storm data">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/small.css">
@@ -28,8 +28,8 @@
         <ul id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
+            <li><a href="soda_springs.html">Soda Springs</a></li>
+            <li><a href="fish_haven.html">Fish Haven</a></li>
             <li class="active"><a href="storm_center.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -42,11 +42,10 @@
             <fieldset>
                 <!-- Personal Information  -->
                 <legend>Personal Information</legend>
-                <label class="top"> Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5.}" required></label>
-                <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"
-                        required></label>
-                <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top"> Zipcode <input type="tel" name="number" required></label>
+                <label class="top"> Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top"> Zipcode* <input type="tel" name="number" required></label>
             </fieldset>
 
             <!-- Storm Information  -->
@@ -63,14 +62,14 @@
                     <option value="Tornado">
                 </datalist>
 
-                <label class="top">Storm Severity:</label>
+                <label for="rating" class="top">Storm Severity:</label>
                 <!-- <label class="flexly" for="rating"> &nbsp;&nbsp;&nbsp; -->
                     <input class="flexly" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
 
 
-                <label>
+
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
@@ -84,7 +83,7 @@
                         <option value="9">
                         <option value="10">
                     </datalist>
-                </label>
+
 
                 <label class="top">Storm Region <select name="subjet">
                         <option value="none" selected disabled>Select Region &#9662;</option>
@@ -102,7 +101,8 @@
 
             <fieldset>
                 <legend>Additional Information or Comments</legend>
-                <textarea id="comments" name="comments" rows="4" cols="50">Enter comments here...</textarea>
+                <label class="comments"><textarea id="comments" name="comments" rows="4" cols="50">Enter comments here...</textarea></label>
+                
 
 
             </fieldset>
@@ -114,9 +114,6 @@
         &copy;<span id="year"></span> | Jimmy England | California | <a class="byu" href="https://www.byui.edu/online"
             target="_blank">BYU-Idaho Online
             Learning</a>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>
-            and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
         </div>
         <div id="date"></div>
