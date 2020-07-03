@@ -21,4 +21,13 @@ function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
 
+WebFont.load({
+    google: {
+      families: [
+         'Poppins',
+         'Lato'
+      ]
+    }
+  });
+
 

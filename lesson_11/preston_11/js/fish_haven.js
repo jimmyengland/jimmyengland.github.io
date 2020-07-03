@@ -1,3 +1,18 @@
+// Wind Chill 
+const w = document.querySelector("#wind").innerHTML;
+const t = document.querySelector("#currentTemp").innerHTML; 
+
+
+
+if (t < 50 && w > 3.0){
+    const wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(w,.16)) + (.4275 * t * Math.pow(w,.16))
+    document.querySelector("#chill").innerHTML = Math.floor(wc) + "&#8457;";
+} else{
+    document.querySelector("#chill").innerHTML = "NA";
+}
+
+// Current weather
+
 const currentURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0372&lon=111.3960&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
 fetch(currentURL)
@@ -23,7 +38,9 @@ fetch(currentURL)
 
     );
 
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0372&lon=111.3960&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
+// 5 Day forcast
+
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0372&lon=-111.3960&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
 fetch(forecastURL)
     .then((response) => response.json())
@@ -49,7 +66,7 @@ fetch(forecastURL)
 
     });
 
-// script for json on index page
+// Current events in town
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
@@ -58,7 +75,6 @@ fetch(requestURL)
     })
 
     .then(function (jsonObject) {
-        // console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {

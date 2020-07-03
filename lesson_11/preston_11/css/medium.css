@@ -58,6 +58,10 @@
         width: 35%;
     }
 
+    .articleDiv{
+        border-radius: 10px;
+    }
+
     .day {
         display: block;
     }

@@ -1,3 +1,52 @@
+// banner
+
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("hide");
+}
+
+var date = new Date();
+var year = date.getFullYear();
+var day = date.getDay();
+var dayNum = date.getDate();
+var month = date.getMonth();
+var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "November", "December"]
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+var dateString = dayNames[day] + ", " + dayNum + " " + monthNames[month] + ", " + year;
+document.getElementById("date").innerHTML = dateString;
+
+
+document.getElementById("year").textContent = year;
+
+
+
+const banner = document.getElementById("friday");
+if (date.getDay() == 5) {
+    banner.style.display = "block";
+}
+
+else {
+    banner.style.display = "none";
+}
+
+
+// Wind Chill 
+const w = document.querySelector("#wind").innerHTML;
+const t = document.querySelector("#currentTemp").innerHTML; 
+
+
+
+if (t < 50 && w > 3.0){
+    const wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(w,.16)) + (.4275 * t * Math.pow(w,.16))
+    document.querySelector("#chill").innerHTML = Math.floor(wc) + "&#8457;";
+} else{
+    document.querySelector("#chill").innerHTML = "NA";
+}
+
+
+
+// Current Weather 
+
 const currentURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
 fetch(currentURL)
@@ -22,6 +71,8 @@ fetch(currentURL)
         }
 
     );
+
+// 5 day forcast
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&exclude=hourly,daily&APPID=aabf571ae3b6766a2927f44fdd37a467";
 
@@ -50,7 +101,7 @@ fetch(forecastURL)
     });
 
 
-// script for json on index page
+// events in town
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
@@ -59,7 +110,6 @@ fetch(requestURL)
     })
 
     .then(function (jsonObject) {
-        // console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
