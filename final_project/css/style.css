@@ -320,7 +320,7 @@ html {
 html {
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', 'Merriweather', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   background-color: #f5f0e1; }
 
@@ -334,7 +334,6 @@ header {
   justify-content: center; }
 
 header img {
-  width: 150px;
   padding: 20px; }
 
 header img.left {
