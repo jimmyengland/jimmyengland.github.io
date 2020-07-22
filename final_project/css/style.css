@@ -337,6 +337,9 @@ header img {
   width: 150px;
   padding: 20px; }
 
+header img.left {
+  transform: scaleX(-1); }
+
 header img.right {
   display: none; }
 
@@ -704,9 +707,6 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 20px; }
-
-  header img.left {
-    transform: scaleX(-1); }
 
   header img.right {
     display: block; }
