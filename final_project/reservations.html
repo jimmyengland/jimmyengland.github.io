@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots - Reservations</title>
+    <meta name="description" content="Reservation Page">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon_2.png" alt="image of scooter used as icon">
+        <section>
+            <h1>Cozumel Scoots</h1>
+            <p class="motto">Life is a Journey, enjoy the Ride</p>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ol id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ol>
+    </nav>
+    <main class="reservations">
+        <h2>Reservations</h2>
+        <form method="GET" action="conformation.html">
+
+            <fieldset>
+                <!-- Personal Information  -->
+                <legend>Personal Information</legend>
+                <label class="top"> Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top"> Home State or Country <input type="text" name="home"></label>
+                <label class="top"> Cruise Line <input type="text" name="cruise"></label>
+            </fieldset>
+
+            <!-- Storm Information  -->
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top">Start Date<input type="date" name="startDate"></label>
+                <label class="top">Return Date<input type="date" name="endDate"></label>
+
+                <label class="top">Choose Rental Option:</label>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="~Honda Metro Scooter">
+                <label for="vehicle1">~Honda Metro Scooter</label>
+                <input type="text" placeholder="Amount wanted"><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="~Honda Dio Scooter">
+                <label for="vehicle2">~Honda Dio Scooter</label>
+                <input type="text" placeholder="Amount wanted"><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="~Honda PCX150 Scooter">
+                <label for="vehicle3">~Honda PCX150 Scooter</label>
+                <input type="text" placeholder="Amount wanted"><br>
+                <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Pioneer ATV">
+                <label for="vehicle4">Honda Pioneer ATV</label>
+                <input type="text" placeholder="Amount wanted"><br>
+                <input type="checkbox" id="vehicle5" name="vehicle5" value="Jeep Wrangler - 4 door with a/c">
+                <label for="vehicle5">Jeep Wrangler - 4 door with a/c</label>
+                <input type="text" placeholder="Amount wanted"><br>
+                <input type="checkbox" id="vehicle6" name="vehicle6" value="Jeep Wrangler - 2 door">
+                <label for="vehicle6">Jeep Wrangler - 2 door</label>
+                <input type="text" placeholder="Amount wanted"><br>
+
+                <label class="top">Amount of People in Party<input type="number" name="vehicles"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Special Requests or Questions</legend>
+                <label class="comments"><textarea id="comments" name="comments" rows="4"
+                        cols="50">Enter comments here...</textarea></label>
+
+            </fieldset>
+            <input type="submit" value="Reserve Rental" class="submitBtn">
+        </form>
+    </main>
+
+    <footer>
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu"
+            href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+            Learning</a>
+        <br>
+        <div class="lastUpdated">Last Updated: <span id="date"></span></div>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/icons/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="https://instagram.com"><img src="images/icons/instagramicon.png" alt="Instgram Icon"></a>
+            <a href="https://twitter.com"><img src="images/icons/twittericon.png" alt="Twitter Icon"></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
