@@ -773,7 +773,7 @@ footer img {
   section.weather {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center; }
 
   /* tours page  */
