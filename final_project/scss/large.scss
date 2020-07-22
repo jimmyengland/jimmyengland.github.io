@@ -17,10 +17,14 @@
     }
 
     /* tours page  */
-
     section.interest {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5px;
+    }
+
+    div.dolphin {
+        grid-column: 2;
     }
 
     div.snorkel {
@@ -30,6 +34,13 @@
     div.snorkel h3 {
         margin-bottom: -3px;
     }
+
+    div.snorkel img{
+        padding-left: 0;
+    }
+
+
+   
 
 
 

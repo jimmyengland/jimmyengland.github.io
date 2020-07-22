@@ -38,6 +38,10 @@ header img {
     padding: 20px;
 }
 
+header img.right {
+    display: none;
+}
+
 .head {
     display: flex;
     flex-direction: column;

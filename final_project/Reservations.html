@@ -12,11 +12,12 @@
 
 <body>
     <header>
-        <img src="images/icon_2.png" alt="image of scooter used as icon">
+        <img class="left" src="images/icon_2.png" alt="image of scooter used as icon">
         <section>
             <h1>Cozumel Scoots</h1>
             <p class="motto">Life is a Journey, enjoy the Ride</p>
         </section>
+        <img src="images/icon_2.png" alt="image of scooter used as icon">
     </header>
 
     <nav class="clearfix">
@@ -50,24 +51,30 @@
                 <label class="top">Return Date<input type="date" name="endDate"></label>
 
                 <label class="top">Choose Rental Option:</label>
+
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="~Honda Metro Scooter">
                 <label for="vehicle1">~Honda Metro Scooter</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle1" placeholder="Amount wanted"><br>
+
                 <input type="checkbox" id="vehicle2" name="vehicle2" value="~Honda Dio Scooter">
                 <label for="vehicle2">~Honda Dio Scooter</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle2" placeholder="Amount wanted"><br>
+
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="~Honda PCX150 Scooter">
                 <label for="vehicle3">~Honda PCX150 Scooter</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle3" placeholder="Amount wanted"><br>
+
                 <input type="checkbox" id="vehicle4" name="vehicle4" value="Honda Pioneer ATV">
                 <label for="vehicle4">Honda Pioneer ATV</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle4" placeholder="Amount wanted"><br>
+
                 <input type="checkbox" id="vehicle5" name="vehicle5" value="Jeep Wrangler - 4 door with a/c">
                 <label for="vehicle5">Jeep Wrangler - 4 door with a/c</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle5" placeholder="Amount wanted"><br>
+
                 <input type="checkbox" id="vehicle6" name="vehicle6" value="Jeep Wrangler - 2 door">
                 <label for="vehicle6">Jeep Wrangler - 2 door</label>
-                <input type="text" placeholder="Amount wanted"><br>
+                <input type="text" aria-labelledby="vehicle6" placeholder="Amount wanted"><br>
 
                 <label class="top">Amount of People in Party<input type="number" name="vehicles"></label>
             </fieldset>

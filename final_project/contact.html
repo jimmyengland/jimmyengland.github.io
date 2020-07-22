@@ -12,11 +12,12 @@
 
 <body>
     <header>
-        <img src="images/icon_2.png" alt="image of scooter used as icon">
+        <img class="left" src="images/icon_2.png" alt="image of scooter used as icon">
         <section>
             <h1>Cozumel Scoots</h1>
             <p class="motto">Life is a Journey, enjoy the Ride</p>
         </section>
+        <img src="images/icon_2.png" alt="image of scooter used as icon">
     </header>
 
     <nav class="clearfix">
@@ -34,18 +35,20 @@
         <section class="maps">
             <div>
                 <h3>Terminal Puerta Maya</h3>
-                <p>Address</p>
-                <p> Terminal Maritima Puerta Maya,
+                <p class="address">Address</p>
+                <p>Terminal Maritima Puerta Maya,
                     Carretera Costera Sur, cozumel, Centro,
                     77600 Costa Maya, Q.R., Mexico</p>
-                <p>Phone Number</p>
+                <p class="phone">Phone Number</p>
                 <p>+52 987 898 6804</p>
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3737.7286383366027!2d-86.97748854980972!3d20.476335763625883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595113730719!5m2!1sen!2sus"
                     style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
             </div>
 
-            <div>
+            <div class="ferry">
                 <h3>Playa del Carmen-Cozumel Ferry dock</h3>
                 <p>Address</p>
                 <p>Rafael E Melgar S/N entre Q.R Juárez,
@@ -63,9 +66,8 @@
             <form action="thanks.html">
                 <label class="top">First Name <input type="text" name="name" placeholder="Full Name"></label>
                 <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Subject</label>
+                <label class="top" for="subject">Subject</label>
                 <textarea id="subject" class="comments" name="subject" placeholder="Message.."></textarea>
-
                 <input type="submit" value="Submit" class="submitBtn">
 
             </form>
