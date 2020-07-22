@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots</title>
-    <meta name="description" content="Home Page">
+    <title>~Scoots - Contact</title>
+    <meta name="description" content="Contact Page">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
@@ -14,68 +15,65 @@
         <img src="images/icon_2.png" alt="image of scooter used as icon">
         <section>
             <h1>Cozumel Scoots</h1>
-            <p>Life is a Journey,</p>
-            <p>enjoy the Ride</p>
+            <p class="motto">Life is a Journey, enjoy the Ride</p>
         </section>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ol id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
-            <li class="active"><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
         </ol>
     </nav>
-    <main>
+    <main class="contact">
         <h2>Contact Info</h2>
-        <div>
-            <h3>Terminal Puerta Maya</h3>
-            <p>Address</p>
-            <p> Terminal Maritima Puerta Maya,
-                Carretera Costera Sur, cozumel, Centro,
-                77600 Costa Maya, Q.R., Mexico</p>
-            <p>Phone Number</p>
-            <p>+52 987 898 6804</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3737.7286383366027!2d-86.97748854980972!3d20.476335763625883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595113730719!5m2!1sen!2sus"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
+        <section class="maps">
+            <div>
+                <h3>Terminal Puerta Maya</h3>
+                <p>Address</p>
+                <p> Terminal Maritima Puerta Maya,
+                    Carretera Costera Sur, cozumel, Centro,
+                    77600 Costa Maya, Q.R., Mexico</p>
+                <p>Phone Number</p>
+                <p>+52 987 898 6804</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3737.7286383366027!2d-86.97748854980972!3d20.476335763625883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595113730719!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
 
-        <div>
-            <h3>Playa del Carmen-Cozumel Ferry dock</h3>
-            <p>Address</p>
-            <p>Rafael E Melgar S/N entre Q.R Juárez,
-                Av. Rafael E. Melgar Esquina Rafael E Melgar S/N entre Q.R Juárez,
-                Av. Rafael E. Melgar Esquina, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
-            <p>Phone Number</p>
-            <p>+52 987 989 0039</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1526.4375582440673!2d-86.94987773588093!3d20.511039291050263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595115019101!5m2!1sen!2sus"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
-
+            <div>
+                <h3>Playa del Carmen-Cozumel Ferry dock</h3>
+                <p>Address</p>
+                <p>Rafael E Melgar S/N entre Q.R Juárez,
+                    Av. Rafael E. Melgar Esquina Rafael E Melgar S/N entre Q.R Juárez,
+                    Av. Rafael E. Melgar Esquina, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                <p>Phone Number</p>
+                <p>+52 987 989 0039</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1526.4375582440673!2d-86.94987773588093!3d20.511039291050263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595115019101!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
         <section>
+            <h2>Contact Form</h2>
             <form action="thanks.html">
-
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="name" placeholder="Full Name">
+                <label class="top">First Name <input type="text" name="name" placeholder="Full Name"></label>
                 <label class="top"> Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label class="top">Subject</label>
+                <textarea id="subject" class="comments" name="subject" placeholder="Message.."></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submitBtn">
 
             </form>
         </section>
     </main>
     <footer>
-        &copy;<span id="year"></span></div> | Jimmy England | California | <a class="byu"
-            href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu" href="https://www.byui.edu/online"
+            target="_blank">BYU-Idaho Online
             Learning</a>
         <br>
         <div class="lastUpdated">Last Updated: <span id="date"></span></div>
@@ -83,6 +81,7 @@
             <a href="https://facebook.com"><img src="images/icons/facebookicon.png" alt="Facebook Icon"></a>
             <a href="https://instagram.com"><img src="images/icons/instagramicon.png" alt="Instgram Icon"></a>
             <a href="https://twitter.com"><img src="images/icons/twittericon.png" alt="Twitter Icon"></a>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>

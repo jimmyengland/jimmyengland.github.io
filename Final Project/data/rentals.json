@@ -1,4 +1,18 @@
 [{
+        "resHalf": "Reservation",
+        "walkHalf": "Walk-In"
+    },
+
+    {
+        "Name": "Rental Type",
+        "max": "Max. Persons",
+        "resHalf": "Half Day (3 hrs)",
+        "resFull": "Full Day",
+        "walkHalf": "Half Day (3 hrs)",
+        "walkFull": "Full Day"
+    },
+
+    {
         "Name": "~Honda Metro Scooter",
         "max": "1",
         "resHalf": "$20",
@@ -52,5 +66,3 @@
         "walkFull": "$90"
     }
 ]
-
-

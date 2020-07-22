@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64rem) {
+  main,
+  main.tours {
+    max-width: 1000px;
+    margin: auto; }
+
+  div.article {
+    padding-bottom: 3%; }
+
+  section.weather {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+
+  /* tours page  */
+  section.interest {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px; }
+
+  div.snorkel {
+    grid-column: 3; }
+
+  div.snorkel h3 {
+    margin-bottom: -3px; } }
+
+/*# sourceMappingURL=large.css.map */

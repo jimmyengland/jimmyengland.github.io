@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots</title>
-    <meta name="description" content="Home Page">
+    <title>~Scoots - Tours</title>
+    <meta name="description" content="Tours Page">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
@@ -14,13 +15,12 @@
         <img src="images/icon_2.png" alt="image of scooter used as icon">
         <section>
             <h1>Cozumel Scoots</h1>
-            <p>Life is a Journey,</p>
-            <p>enjoy the Ride</p>
+            <p class="motto">Life is a Journey, enjoy the Ride</p>
         </section>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ol id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
@@ -29,50 +29,80 @@
             <li><a href="contact.html">Contact</a></li>
         </ol>
     </nav>
-    <main>
-        <h2>Histoy of Cozumel</h2>
-        <p>Cozumel was a commercial and ceremonial centre during the Mayan period (about 250 to 950 CE), and the island
-            has several small archaeological sites. In 1518 Juan de Grijalva led the first Spanish expedition to
-            Cozumel. In 1519 Hernán Cortés used the island as a base for Spanish efforts to conquer the Maya. During
-            most of the Spanish colonial era, Cozumel was only sparsely populated, but trading ships and pirates
-            occasionally sought shelter and replenished supplies on the island, which was protected behind offshore
-            reefs.</p>
-        <p>Measuring about 29 miles (46 km) from northeast to southwest and averaging 9 miles (14 km) in width, it is
-            the largest of Mexico’s inhabited islands. Geologically similar to the Yucatán, the interior of Cozumel
-            consists of a plain broken by low hills that are only about 50 feet (15 metres) above sea level. Much of the
-            island is covered by scrubby tropical jungle. Poor soils have discouraged agriculture on the island, but
-            traditional crops include tropical fruits, henequen (a fibre crop), corn (maize), and cassava (manioc).</p>
+    <main class="tours">
+        <div class="history">
+            <h2>Histoy of Cozumel</h2>
+            <p> Cozumel was a commercial and ceremonial centre during the Mayan period (about 250 to 950 CE), and the
+                island has several small archaeological sites.<br>
+                In 1518 Juan de Grijalva led the first Spanish expedition to
+                Cozumel. In 1519 Hernán Cortés used the island as a base for Spanish efforts to conquer the Maya. During
+                most of the Spanish colonial era, Cozumel was only sparsely populated, but trading ships and pirates
+                occasionally sought shelter and replenished supplies on the island, which was protected behind offshore
+                reefs.</p><br>
+            <p>Measuring about 29 miles (46 km) from northeast to southwest and averaging 9 miles (14 km) in width, it
+                is
+                the largest of Mexico’s inhabited islands. Geologically similar to the Yucatán, the interior of Cozumel
+                consists of a plain broken by low hills that are only about 50 feet (15 metres) above sea level.<br>
+                Much of the island is covered by scrubby tropical jungle. Poor soils have discouraged agriculture on the
+                island, but
+                traditional crops include tropical fruits, henequen (a fibre crop), corn (maize), and cassava (manioc).
+            </p>
+        </div>
         <h2>Points of Interest</h2>
-        <div>
-            <h3>Mayan Bee Sanctuary</h3>
-            <p>The Mayan Bee Sanctuary it´s a place to discover the stingless bee and the Melipona honey. The Mayan Bee
-                Sanctuary, is an interactive place in which you become in an explorer of the history of one of the most
-                nutritional food in the world. More info at <a
-                    href="https://www.tripadvisor.com/Attraction_Review-g13882869-d17634956-Reviews-Mayan_Bee_Sanctuary-San_Miguel_de_Cozumel_Cozumel_Yucatan_Peninsula.html">Trip
-                    Advisor</a></p>
-            <img src="images/tours/mayanbee_resized.jpg" alt="Bee Sanctuary">
-        </div>
-        <div>
-            <h3>Dolphin Discovery Cozumel</h3>
-            <p>At Dolphin Discovery-Cozumel you’ll be able to get up close and personal with a dolphin by participating
-                in the Dolphin Encounter program. This program is designed so all people can participate, regardless of
-                your age; everyone can participate in this charming first encounter with a dolphin. You will be able to
-                touch, caress, hug and kiss this amazing creature. More info at <a
-                    href="https://www.dolphindiscovery.com/cozumel"></a>Dolphin Discovery</p>
-            <img src="images/tours/dolphin_resized.jpg" alt="Dolphin Ready to play">
-        </div>
-        <div>
-            <h3>Cozumel Snorkeling Tour: Palancar, Columbia and Cielo Reefs</h3>
-            <p>Marine-life lovers can discover the colorful reefs off the coast of Cozumel from above and below the
-                surface on a glass-bottom boat tour that stops for snorkeling at three different reefs. More at <a
-                    href="https://www.tripadvisor.com/AttractionProductReview-g150809-d12005499-Cozumel_Snorkeling_Tour_Palancar_Columbia_and_Cielo_Reefs-Cozumel_Yucatan_Peninsul.html">Trip
-                    Advisor</a></p>
-            <img src="images/tours/snorkeling.jpg" alt="">
-        </div>
+        <section class="interest">
+            
+            <div class="bee">
+                <h3>Mayan Bee Sanctuary</h3>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/tours/mayanbee_small.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/mayanbee_medium.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/mayanbee_resized.jpg">
+                    <img src="images/tours/mayanbee_resized.jpg" alt="Bee Sanctuary">
+                </picture>
+                <p>The Mayan Bee Sanctuary it´s a place to discover the stingless bee and the Melipona honey. The Mayan
+                    Bee
+                    Sanctuary, is an interactive place in which you become in an explorer of the history of one of the
+                    most
+                    nutritional food in the world. More info at <a
+                        href="https://www.tripadvisor.com/Attraction_Review-g13882869-d17634956-Reviews-Mayan_Bee_Sanctuary-San_Miguel_de_Cozumel_Cozumel_Yucatan_Peninsula.html">Trip
+                        Advisor</a></p>
+
+            </div>
+            <div class="dolphin">
+                <h3>Dolphin Discovery Cozumel</h3>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/tours/dolphin_small.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/dolphin_medium.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/dolphin_resized.jpg">
+                    <img src="images/tours/dolphin_resized.jpg" alt="Dolphin Ready to play">
+                </picture>
+                <p>At Dolphin Discovery-Cozumel you’ll be able to get up close and personal with a dolphin by
+                    participating
+                    in the Dolphin Encounter program. This program is designed so all people can participate, regardless
+                    of
+                    your age; everyone can participate in this charming first encounter with a dolphin. You will be able
+                    to
+                    touch, caress, hug and kiss this amazing creature. More info at <a
+                        href="https://www.dolphindiscovery.com/cozumel"></a>Dolphin Discovery</p>
+            </div>
+            <div class="snorkel">
+                <h3>Cozumel Snorkeling Tour: Palancar, Columbia and Cielo Reefs</h3>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/tours/snorkeling_small.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/snorkeling_medium.jpg">
+                    <source media="(min-width: 680px)" srcset="images/tours/snorkeling.jpg">
+                    <img src="images/tours/snorkeling.jpg" alt="guy snorkeling">
+                </picture>
+                <p>Marine-life lovers can discover the colorful reefs off the coast of Cozumel from above and below the
+                    surface on a glass-bottom boat tour that stops for snorkeling at three different reefs. More at <a
+                        href="https://www.tripadvisor.com/AttractionProductReview-g150809-d12005499-Cozumel_Snorkeling_Tour_Palancar_Columbia_and_Cielo_Reefs-Cozumel_Yucatan_Peninsul.html">Trip
+                        Advisor</a></p>
+            </div>
+        </section>
     </main>
     <footer>
-        &copy;<span id="year"></span></div> | Jimmy England | California | <a class="byu"
-            href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu" href="https://www.byui.edu/online"
+            target="_blank">BYU-Idaho Online
             Learning</a>
         <br>
         <div class="lastUpdated">Last Updated: <span id="date"></span></div>
@@ -80,6 +110,7 @@
             <a href="https://facebook.com"><img src="images/icons/facebookicon.png" alt="Facebook Icon"></a>
             <a href="https://instagram.com"><img src="images/icons/instagramicon.png" alt="Instgram Icon"></a>
             <a href="https://twitter.com"><img src="images/icons/twittericon.png" alt="Twitter Icon"></a>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>

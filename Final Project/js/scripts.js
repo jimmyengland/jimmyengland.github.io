@@ -51,7 +51,7 @@ function home_page() {
                 document.getElementById('currentTemp').textContent = Math.floor(current);
                 // space for windchill calculation
                 document.getElementById('humidity').textContent = humidity;
-                document.getElementById('wind').textContent = Math.floor(windspeed);
+                
 
                 document.getElementById('current').appendChild(card);
             }
@@ -65,7 +65,7 @@ function home_page() {
     fetch(forecastURL)
         .then((response) => response.json())
         .then((jsonObject) => {
-            const fiveday = jsonObject.list.filter(x => x.dt_txt.includes('12:00:00'));
+            const fiveday = jsonObject.list.filter(x => x.dt_txt.includes('00:00:00'));
 
             const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             let i = 1;
@@ -85,19 +85,6 @@ function home_page() {
             })
 
         });
-
-    // Wind Chill 
-    const w = document.querySelector("#wind").innerHTML;
-    const t = document.querySelector("#currentTemp").innerHTML;
-
-
-
-    if (t < 50 && w > 3.0) {
-        const wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(w, .16)) + (.4275 * t * Math.pow(w, .16))
-        document.querySelector("#chill").innerHTML = Math.floor(wc) + "&#8457;";
-    } else {
-        document.querySelector("#chill").innerHTML = "NA";
-    }
 }
 
 function rentals_page() {
@@ -117,8 +104,29 @@ function rentals_page() {
             var table = document.createElement("table");
 
             var tr = table.insertRow(-1); // table row.
+            var tr2 = table.insertRow(1);
+            var th = document.createElement("th");
+            var res = document.createElement("th");
+            var walk = document.createElement("th");
+            var blank = document.createElement("td");
+            
+            th.innerHTML = "Max Persons and Price Chart (includes Tax)";
+            th.colSpan = 6;
+            tr.appendChild(th);
 
-            for (var i = 0; i < jsonObject.length; i++) {
+            blank.innerHTML="";
+            blank.colSpan = 2;
+            tr2.appendChild(blank)
+
+            res.innerHTML = "Reservation";
+            res.colSpan = 2;
+            tr2.appendChild(res);
+
+            walk.innerHTML="Walk-In";
+            walk.colSpan = 2;
+            tr2.appendChild(walk)
+
+            for (var i = 1; i < jsonObject.length; i++) {
 
                 tr = table.insertRow(-1);
 

@@ -1,0 +1,446 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', 'Merriweather', sans-serif;
+    font-size: 18px;
+    background-color: #f5f0e1;
+}
+
+header {
+    background-color: #6699CC;
+    padding: 10px;
+    color: black;
+    font-family: 'Merriweather', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 150px;
+    padding: 20px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    font-size: .9rem;
+
+}
+
+/* Navigation menu */
+nav button {
+    width: 96%;
+    text-align: center;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+    background-color: #71E4BF;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ol li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ol li.active a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+nav ol li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav ol.hide {
+    display: none;
+}
+
+a.actionCall {
+    display: block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #71E4BF;
+    margin: auto;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 300;
+    color: #04eea4;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #083e46;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+a.actionCall:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+main {
+    font-family: 'Source Sans Pro';
+
+}
+
+div.summary {
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+div.summary dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img.mainImg {
+    display: block;
+    margin: 0 auto;
+}
+
+div.article {
+    padding: 10%;
+}
+
+div.article h3 {
+    text-decoration: underline;
+}
+
+section.weather {
+    margin: auto;
+    width: 80%;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+
+}
+
+section.weather th {
+    text-decoration: underline;
+}
+
+section.weather table {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    background-color: #bce2e2;
+}
+
+
+.day {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    /* flex-direction: row; */
+    /* let us combine row and wrap with flow */
+    flex-flow: column wrap;
+    padding-bottom: 30px;
+}
+
+.day h3 {
+    text-align: center;
+
+}
+
+.flex-row {
+    flex: 10em;
+    flex: 30%;
+    flex: min-content;
+    background-color: #bce2e2;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
+}
+
+.flex-row:nth-last-child(1) {
+    border-bottom: 1px solid #333;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.col-head {
+    color: black;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.col-temp {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.col-head {
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #6699CC;
+    color: black;
+}
+
+
+
+/* rentals page */
+div.info {
+    margin: auto;
+    background-color: #a3c3be80;
+    max-width: 350px;
+}
+
+div.info h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main.rentals table {
+    table-layout: auto;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    empty-cells: hide;
+    border-collapse: collapse;
+    border: solid 1px black;
+    background-color: #dde7e5;
+}
+
+main.rentals th {
+    text-decoration: underline;
+}
+
+main.rentals table td:nth-child(3),
+main.rentals td:nth-child(4) {
+    background: rgba(92, 79, 79, 0.089);
+    border: solid 1px black;
+}
+
+main.rentals table td:nth-child(5),
+main.rentals td:nth-child(6) {
+    background: rgba(35, 35, 53, 0.212);
+    border: solid 1px black;
+}
+
+main.rentals th,
+main.rentals td {
+    padding: 5px;
+}
+
+/* reservations page */
+main.reservations {
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+main.reservations fieldset {
+    text-align: left;
+
+}
+
+form label.top {
+    display: block;
+    padding-top: 15px;
+}
+
+
+form label.top {
+    display: block;
+    padding-top: 15px;
+}
+
+form label.top form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select,
+form input.top {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2% auto 0rem auto;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form textarea#comments {
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/* tours page  */
+main.tours {
+    max-width: 350px;
+    margin: auto;
+}
+
+main.tours h2 {
+    text-decoration: underline;
+}
+
+main.tours h3,
+main.tours h2 {
+    text-align: center;
+}
+
+main.tours p {
+    margin: auto;
+}
+
+/* contact page  */
+main.contact {
+    max-width: 350px;
+    margin: auto;
+}
+
+main.contact h3,
+main.contact h2 {
+    text-align: center;
+}
+
+main.contact h3 {
+    text-decoration: underline;
+}
+
+main.contact p:nth-child(even) {
+    text-align: center;
+    text-decoration: underline;
+}
+
+main.contact div {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+main.contact textarea.comments {
+    width: 100%;
+    height: 70px;
+}
+
+main.conformation {
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+footer {
+    background-color: #6699CC;
+    max-width: 800px;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    margin: 2% auto;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    color: black;
+    font-family: 'Merriweather', sans-serif;
+    font-size: .8rem;
+}
+
+footer a.byu:link,
+footer a.byu:visited {
+    color: black;
+}
+
+footer img {
+    width: 35px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

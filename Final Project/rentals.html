@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~Scoots - Rentals</title>
     <meta name="description" content="Rental Page">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
@@ -14,13 +15,12 @@
         <img src="images/icon_2.png" alt="image of scooter used as icon">
         <section>
             <h1>Cozumel Scoots</h1>
-            <p>Life is a Journey,</p>
-            <p>enjoy the Ride</p>
+            <p class="motto">Life is a Journey, enjoy the Ride</p>
         </section>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ol id="primaryNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="rentals.html">Rentals</a></li>
@@ -29,31 +29,27 @@
             <li><a href="contact.html">Contact</a></li>
         </ol>
     </nav>
-    <main>
-        <table>
-            <tr>
-                <th>Max Persons and Price Chart (includes Tax)</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Reservation</td>
-                <td>Walk-In</td>
-            </tr>
-            <tr>
-                <th>Rental Type</th>
-                <th>Max. Persons</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-            </tr>
-            <tr id="showData"></tr>
-        </table>
-        
+    <main class="rentals">
+        <div class="info">
+            <h3>Information and Services</h3>
+            <ol>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ol>
+        </div>
+        <div id="showData"></div>
     </main>
 
     <footer>
-        &copy;<span id="year"></span></div> | Jimmy England | California | <a class="byu"
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu"
             href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
             Learning</a>
         <br>
@@ -62,6 +58,7 @@
             <a href="https://facebook.com"><img src="images/icons/facebookicon.png" alt="Facebook Icon"></a>
             <a href="https://instagram.com"><img src="images/icons/instagramicon.png" alt="Instgram Icon"></a>
             <a href="https://twitter.com"><img src="images/icons/twittericon.png" alt="Twitter Icon"></a>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>

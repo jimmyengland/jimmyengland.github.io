@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~Scoots</title>
     <meta name="description" content="Home Page">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
 <body onload="home_page()">
     <header>
-        <img src="images/icon_2.png" alt="image of scooter used as icon">
-        <section>
+        <img class="logo" src="images/icon_2.png" alt="image of scooter used as icon">
+        <section class="head">
             <h1>Cozumel Scoots</h1>
-            <p>Life is a Journey,</p>
-            <p>enjoy the Ride</p>
+            <p class="motto">Life is a Journey, enjoy the Ride</p>
+
         </section>
     </header>
 
     <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;</button>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
         <ol id="primaryNav" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
@@ -30,21 +31,37 @@
         </ol>
     </nav>
     <main>
-        <h2>Explore the island with style and ease on our rental scooters!</h2>
+        <a href="Reservations.html" class="actionCall">Reserve a Vehicle Now!</a>
+        <!-- <button class="actionCall" onclick="location.href='reservations.html'" type="button">Reserve a Vehicle Now!</button> -->
         <section class="upper">
+
+            <div class="summary">
+                <h3>Rental Types</h3>
+                <dl>
+                    <dt>Honda Motor Scooters</dt>
+                    <dd>Honda Metropolitan (49cc) - 1 person</dd>
+                    <dd>Honda Dio (110cc) - 2 person</dd>
+                    <dd>Honda PCX150 (149cc) - 2 person</dd>
+                    <dt>ATV Side-by-Side</dt>
+                    <dd>Honda Pioneer 1000</dd>
+                    <dt>Jeep Rentals</dt>
+                    <dd>4-door Jeep Wrangler - manual with A/C - 5 people max</dd>
+                    <dd>2-door Jeep Wrangler - open air - manual - 4 people max</dd>
+                </dl>
+            </div>
             <img class="mainImg" src="images/main_page/riding_scooters_2.jpg" alt="couple riding scooters by beach">
             <div class="article">
                 <h3>In promoting sustainable mobility, Cozumel gets official bike lanes</h3>
                 <p>Cozumel, Q.R. — In order to provide sustainable mobility alternatives to Cozumel residents, a
-                    bicycle-only lane has been added to city streets.
+                    bicycle-only lane has been added to city streets.<br><br>
 
                     The new bike lane will cover approximately three kilometres of Cozumel territory says island mayor
                     Pedro Joaquín Delbouis. The bike lane will run in both directions from north to south. Director of
                     Public Services Alejandro Alonso Flores, added that the lanes will have reflectors, signage at each
-                    intersection, pedestrian crossing markings and No Parking signs for vehicles.
+                    intersection, pedestrian crossing markings and No Parking signs for vehicles.<br><br>
 
                     Joaquin Delbuois says the new Carretera Costera Sur cycle path will cover more than three kilometres
-                    from 11th Avenue to Avenida Claudio Canto Anduze.
+                    from 11th Avenue to Avenida Claudio Canto Anduze. <br><br>
                     “Since the beginning of this administration, we have sought to promote the sustainable development
                     of Cozumel. Now, with the establishment of restrictive mobility measures to face the Covid-19
                     pandemic, we want both inhabitants and visitors who are beginning to reach the destination to enjoy
@@ -53,79 +70,73 @@
                         href="https://www.riviera-maya-news.com/in-promoting-sustainable-mobility-cozumel-gets-official-bike-lanes/2020.html">Riviera
                         Maya News</a></p>
             </div>
-            <div class="summary">
-                <h3>Rental Types</h3>
-                <ol>
-                    <li>Honda Motor Scooters</li>
-                    <dl>Honda Metropolitan (49cc) - 1 person</dl>
-                    <dl>Honda Dio (110cc) - 2 person</dl>
-                    <dl>Honda PCX150 (149cc) - 2 person</dl>
-                    <li>ATV Side-by-Side</li>
-                    <dl>Honda Pioneer 1000</dl>
-                    <li>Jeep Rentals</li>
-                    <dl>4-door Jeep Wrangler - manual with A/C - 5 people max</dl>
-                    <dl>2-door Jeep Wrangler - open air - manual - 4 people max</dl>
-                </ol>
-            </div>
+
         </section>
         <section class="weather">
-            <div id="current">
-                <h2>Local Weather Summary</h2>
-                <p>Currently: <span id="condition"></span></p>
-                <p>Current: <span id="currentTemp"></span>&#8457;</p>
-                <p>Wind Chill: <span id="chill"></span></p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Speed: <span id="wind"></span> mph</p>
-            </div>
+            <table id="current">
+                <tr>
+                    <th>Local Weather Summary</th>
+                </tr>
+                <tr>
+                    <td>Currently: <span id="condition"></span></td>
+                </tr>
+                <tr>
+                    <td>Current Temp: <span id="currentTemp"></span>&#8457;</td>
+                </tr>
+                <tr>
+                    <td>Humidity: <span id="humidity"></span>%</td>
+                </tr>
+            </table>
+            
             <div class="day">
                 <h2>5 Day Forcast</h2>
                 <div class="flex">
-                    <div class="flex-col">
+                    <div class="flex-row">
                         <span id="day1" class="col-head">loading...</span>
                         <span id="forecast1" class="col-temp">loading...</span>
                         <!-- added image link to remove error, its replaced by javascript -->
                         <img src="images/placeholder.jpg" alt="placeholder1" id="icon1">
-    
+
                     </div>
-                    <div class="flex-col">
+                    <div class="flex-row">
                         <span id="day2" class="col-head">loading...</span>
                         <span id="forecast2" class="col-temp">loading...</span>
                         <!-- added image link to remove error, its replaced by javascript -->
                         <img src="images/placeholder.jpg" alt="placeholder2" id="icon2">
-    
+
                     </div>
-                    <div class="flex-col">
+                    <div class="flex-row">
                         <span id="day3" class="col-head">loading...</span>
                         <span id="forecast3" class="col-temp">loading...</span>
                         <!-- added image link to remove error, its replaced by javascript -->
                         <img src="images/placeholder.jpg" alt="placeholder3" id="icon3">
-    
+
                     </div>
-                    <div class="flex-col">
+                    <div class="flex-row">
                         <span id="day4" class="col-head">loading...</span>
                         <span id="forecast4" class="col-temp">loading...</span>
                         <!-- added image link to remove error, its replaced by javascript -->
                         <img src="images/placeholder.jpg" alt="placeholder4" id="icon4">
-    
+
                     </div>
-                    <div class="flex-col">
+                    <div class="flex-row">
                         <span id="day5" class="col-head">loading...</span>
                         <span id="forecast5" class="col-temp">loading...</span>
                         <!-- added image link to remove error, its replaced by javascript -->
                         <img src="images/placeholder.jpg" alt="placeholder5" id="icon5">
-    
+
                     </div>
-    
+
                 </div>
-    
+
             </div>
-     
+
         </section>
 
 
     </main>
     <footer>
-        &copy;<span id="year"></span></div> | Jimmy England | California | <a class="byu"
+        &copy;<span id="year"></span> | Jimmy England | California | <a class="byu"
             href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
             Learning</a>
         <br>
@@ -134,6 +145,7 @@
             <a href="https://facebook.com"><img src="images/icons/facebookicon.png" alt="Facebook Icon"></a>
             <a href="https://instagram.com"><img src="images/icons/instagramicon.png" alt="Instgram Icon"></a>
             <a href="https://twitter.com"><img src="images/icons/twittericon.png" alt="Twitter Icon"></a>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/scripts.js"></script>
