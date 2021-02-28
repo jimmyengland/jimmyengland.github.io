@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica|open+sans');
+:root {
+    --primary-color: #D9F0FF;
+    --secondary-color: #A3D5FF;
+    --accent1-color: #83C9F4;
+    --accent2-color: #6F73D2;
+    --heading-font: "open sans";
+    --paragraph-font: Helvetica
+}
+
+html {
+    background-color: var(--primary-color)
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em
+}
+
+img {
+    max-width: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+.colored {
+    color: var(--accent2-color);
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    
+    padding: 1em
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center
+}
+
+.colors th {
+    background-color: #999
+}
+
+.colors td {
+    width: 25%;
+    height: 3em
+}
+
+.primary {
+    background-color: var(--primary-color)
+}
+
+.secondary {
+    background-color: var(--secondary-color)
+}
+
+.accent1 {
+    background-color: var(--accent1-color)
+}
+
+.accent2 {
+    background-color: var(--accent2-color)
+}
+
+nav {
+    background-color:var(--secondary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px
+}
+
+
+
+nav a:hover {
+    color: var(--primary-color) ;
+    
+}
